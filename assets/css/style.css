@@ -589,6 +589,22 @@ a.contless-button {
     color: #fff;
     font-weight: 600;
 }
+.privacy-wrap{
+    margin: 20px 0;
+}
+.privacy-wrap p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.privacy-wrap ul{
+    padding-left: 20px;
+    margin: 10px 0;
+    list-style: disc;
+}
+.privacy-wrap ul li{
+    font-size: 16px;
+    padding: 3px 0;
+}
 /* sub pages css end */
 
 
