@@ -48,8 +48,8 @@ a {
 .container {
     max-width: 1320px;
     margin: 0 auto;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 img {
@@ -111,7 +111,7 @@ img {
 }
 
 .site-logo img {
-    max-width: 300px;
+    max-width: 250px;
 }
 
 .main-nav ul {
@@ -124,7 +124,7 @@ img {
 }
 
 .main-nav ul li a {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--black);
     text-transform: capitalize;
     font-weight: 500;
@@ -152,7 +152,9 @@ img {
 .main-nav ul li a.active {
     color: var(--Primary-Color);
 }
-
+.close, .toggle{
+    display: none;
+}
 /* header section css end */
 
 /* banner section css start  */
@@ -173,7 +175,7 @@ position: relative;
     position: relative;
 }
 .banner-text h1{
-    font-size: 50px;
+    font-size: 3.125rem;
     color: var(--white);
     text-transform: capitalize;
     font-weight: 700;
@@ -185,7 +187,7 @@ position: relative;
     text-align: center;
 }
 .topContent p{
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--black);
     text-align: center;
 }
@@ -213,7 +215,7 @@ position: relative;
 } 
 .link-heading h4{
     color: #fff;
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 600;
 }
 
@@ -285,22 +287,22 @@ section.locations .col-md-6 {
     padding: 15px 10px;
 }
 .location-text h3{
-font-size: 25px;
+font-size: 1.5625rem;
 line-height: 1.1;
 color: #000;
 }
 .location-text p{
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--black);
     margin-bottom: 0;
 }
 .site-heading h2 {
-    font-size: 35px;
+    font-size: 2.1875rem;
     color: #000;
     margin-bottom: 10px;
 }
 .site-heading p {
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--black);
     margin-bottom: 0;
 }
@@ -327,7 +329,7 @@ color: #000;
     position: relative;
 }
 .newsletter-text p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white);
     margin-bottom: 30px;
 }
@@ -346,7 +348,7 @@ color: #000;
     width: 20%;
     height: 45px;
     border: none;
-    font-size: 14px;
+    font-size: 0.875rem;
     background-color: var(--Primary-Color);
     color: var(--white);
     font-weight: 500;
@@ -445,11 +447,11 @@ div#accordionExample {
     height: 50vh;
 }
 .sub-banner .banner-text h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
 }
 .sub-banner .banner-text p{
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white);
     text-align: center;
 }
@@ -461,7 +463,7 @@ a.moreless-button {
     background-color: #0a21c0;
     display: inline-block;
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
 }
 .cidade-img{
@@ -484,13 +486,13 @@ a.moreless-button {
     margin-bottom: 30px;
 }
 .cidade-main-text h3{
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 600;
     margin-bottom: 0px;
     color: #000;
 }
 .cidade-main-text p {
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 10px;
     color: var(--black);
 }
@@ -500,7 +502,7 @@ a.moreless-button {
     list-style: disc;
 }
 .cidade-main-text ul li {
-    font-size: 16px;
+    font-size: 1rem;
     margin: 5px 0;
     color: #000;
 }
@@ -510,7 +512,7 @@ a.moreless-button {
     padding: 11px 30px;
     text-align: center;
     color: #fff;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-top: 10px;
 }
 .moretextt{
@@ -521,7 +523,7 @@ a.contless-button {
     font-weight: 600;
     text-decoration: underline;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.875rem;
     padding-bottom: 10px;
     display: inline-block;
 }
@@ -530,7 +532,7 @@ a.contless-button {
 .Stars {
     --percent: calc(var(--rating) / 5 * 100%);
     display: inline-block;
-    font-size: 30px;
+    font-size: 1.875rem;
     line-height: 1.1;
   }
   .Stars::before {
@@ -549,13 +551,13 @@ a.contless-button {
     margin-bottom: 0;
 }
 .site-heading p{
-    color: var(--white);
+    /* color: var(--white); */
 }
 
 .form-group label {
     display: block;
     color: #fff;
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 5px;
 }
 .form-group input {
@@ -564,7 +566,7 @@ a.contless-button {
     padding: 10px;
     border-radius: 5px;
     border: none;
-    font-size: 14px;
+    font-size: 0.875rem;
     /* background: #cfcfcff0; */
 }
 .form-group {
@@ -585,7 +587,7 @@ a.contless-button {
     background: var(--Secondary-Color);
 }
 .site-heading h4{
-    font-size: 28px;
+    font-size: 1.75rem;
     color: #fff;
     font-weight: 600;
 }
@@ -593,7 +595,7 @@ a.contless-button {
     margin: 20px 0;
 }
 .privacy-wrap p{
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 .privacy-wrap ul{
@@ -602,7 +604,7 @@ a.contless-button {
     list-style: disc;
 }
 .privacy-wrap ul li{
-    font-size: 16px;
+    font-size: 1rem;
     padding: 3px 0;
 }
 /* sub pages css end */
@@ -632,7 +634,7 @@ a.contless-button {
     padding:  0 10px;
 }
 .footer-links ul li a {
-    font-size: 16px;
+    font-size: 1rem;
     color: #000;
     text-transform: capitalize;
     font-weight: 500;
@@ -641,7 +643,7 @@ a.contless-button {
     color: var(--Primary-Color);
 }
 .footer-wrap p{
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--black);
     margin-bottom: 0;
 }
