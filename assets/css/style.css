@@ -3,9 +3,9 @@
 :root {
     --Primary-Color: #0a21c0;
     --Secondary-Color: #005BF0;
-    --bg:#005bf01c;
-    --black:#333;
-    --white:#fff;
+    --bg: #005bf01c;
+    --black: #333;
+    --white: #fff;
 }
 
 /* global css start here */
@@ -144,7 +144,7 @@ img {
 }
 
 .main-nav ul li a:hover::before,
-.main-nav ul li a.active::before{
+.main-nav ul li a.active::before {
     width: 100%;
 }
 
@@ -152,21 +152,25 @@ img {
 .main-nav ul li a.active {
     color: var(--Primary-Color);
 }
-.close, .toggle{
+
+.close,
+.toggle {
     display: none;
 }
+
 /* header section css end */
 
 /* banner section css start  */
-.site-banner{
+.site-banner {
     background-image: url(../images/Hero-banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
-position: relative;
+    position: relative;
 }
-.banner-content{
+
+.banner-content {
     height: 100%;
     width: 100%;
     display: flex;
@@ -174,19 +178,22 @@ position: relative;
     align-items: center;
     position: relative;
 }
-.banner-text h1{
+
+.banner-text h1 {
     font-size: 3.125rem;
     color: var(--white);
     text-transform: capitalize;
     font-weight: 700;
 }
+
 /* banner section css end */
 /* top content section css start  */
 .topContent {
     background-color: var(--bg);
     text-align: center;
 }
-.topContent p{
+
+.topContent p {
     font-size: 1rem;
     color: var(--black);
     text-align: center;
@@ -195,7 +202,7 @@ position: relative;
 /* top contetn section end */
 
 /* link card section css start */
-.link-card-wrap{
+.link-card-wrap {
     background-image: url(../images/Hero-banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -203,17 +210,19 @@ position: relative;
     height: 350px;
     border-radius: 8px;
     overflow: hidden;
-position: relative;
+    position: relative;
 }
-.link-card-wrap a{
+
+.link-card-wrap a {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-} 
-.link-heading h4{
+}
+
+.link-heading h4 {
     color: #fff;
     font-size: 1.5625rem;
     font-weight: 600;
@@ -225,41 +234,46 @@ position: relative;
 
 /* Circle */
 .link-card-wrap {
-	position: relative;
+    position: relative;
 }
+
 .link-card-wrap::before {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	z-index: 2;
-	display: block;
-	content: '';
-	width: 0;
-	height: 0;
-	background: rgba(255,255,255,.2);
-	border-radius: 100%;
-	transform: translate(-50%, -50%);
-	opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
 
 }
+
 .link-card-wrap:hover::before {
-	animation: circle 1s;
-	-webkit-animation: circle 1s;
+    animation: circle 1s;
+    -webkit-animation: circle 1s;
 }
 
 @keyframes circle {
-	0% {
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	100% {
-		width: 200%;
-		height: 200%;
-		opacity: 0;
-	}
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
 }
+
 /* link card section end */
 
 /* location section css start */
@@ -269,52 +283,69 @@ position: relative;
     overflow: hidden;
     height: 100%;
 }
+
 section.locations .col-md-6 {
     margin-bottom: 25px;
 }
+
 .location-img {
     height: 350px;
     /* position: relative; */
+overflow: hidden;
 
 }
-.location-img img{
+
+.location-img:hover img {
+    transform: scale(1.3);
+
+}
+
+.location-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
+    transition: all 0.3s linear;
+
 }
+
 .location-text {
     padding: 15px 10px;
 }
-.location-text h3{
-font-size: 1.5625rem;
-line-height: 1.1;
-color: #000;
+
+.location-text h3 {
+    font-size: 1.5625rem;
+    line-height: 1.1;
+    color: #000;
 }
-.location-text p{
+
+.location-text p {
     font-size: 1rem;
     color: var(--black);
     margin-bottom: 0;
 }
+
 .site-heading h2 {
     font-size: 2.1875rem;
     color: #000;
     margin-bottom: 10px;
 }
+
 .site-heading p {
     font-size: 1rem;
     color: var(--black);
     margin-bottom: 0;
 }
+
 .site-heading {
     text-align: center;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 30px;
 }
+
 /* location section css end */
 /* newsletter section css start  */
-.newsletter{
+.newsletter {
     background-image: url(../images/Hero-banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -322,28 +353,33 @@ color: #000;
     position: relative;
     background-attachment: fixed;
 }
-.newsletter-wrap{
+
+.newsletter-wrap {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
     position: relative;
 }
+
 .newsletter-text p {
     font-size: 1.125rem;
     color: var(--white);
     margin-bottom: 30px;
 }
+
 .newsletter-form form {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .newsletter-form input {
     width: 80%;
     height: 45px;
     padding: 10px;
     border: none;
 }
+
 .newsletter-form button {
     width: 20%;
     height: 45px;
@@ -356,6 +392,7 @@ color: #000;
     align-items: center;
     justify-content: center;
 }
+
 :focus-visible {
     outline: none;
 }
@@ -443,38 +480,63 @@ div#accordionExample {
 /* faq css end */
 
 /* sub pages css start */
-.site-banner.sub-banner{
+.site-banner.sub-banner {
     height: 50vh;
 }
+
 .sub-banner .banner-text h1 {
     font-size: 2.5rem;
     text-align: center;
 }
-.sub-banner .banner-text p{
+
+.sub-banner .banner-text p {
     font-size: 1.125rem;
     color: var(--white);
     text-align: center;
 }
-.moretext{
+
+.moretext {
     display: none;
 }
+
 a.moreless-button {
     padding: 12px 30px;
-    background-color: #0a21c0;
+    background-color: var(--Primary-Color);
     display: inline-block;
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
+    transition: all 0.3s linear;
+ 
 }
-.cidade-img{
+a.moreless-button:hover{
+    background-color: var(--Secondary-Color);
+}
+.cidade-img {
     width: 40%;
+    overflow: hidden;
 }
-.cidade-img img{
+.cidade-img:hover img{
+    transform: scale(1.3);
+
+}
+.cidade-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: all 0.3s linear;
+ 
 }
-.cidade-main-text{
+.contact-wrap button {
+    width: fit-content;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+.cidade-main-text {
     width: 60%;
     padding: 30px 20px;
 }
@@ -485,39 +547,51 @@ a.moreless-button {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin-bottom: 30px;
 }
-.cidade-main-text h3{
+
+.cidade-main-text h3 {
     font-size: 1.5625rem;
     font-weight: 600;
     margin-bottom: 0px;
     color: #000;
 }
+
 .cidade-main-text p {
     font-size: 1rem;
     margin-bottom: 10px;
     color: var(--black);
 }
-.cidade-main-text ul{
+
+.cidade-main-text ul {
     margin: 10px 0;
     padding-left: 40px;
     list-style: disc;
 }
+
 .cidade-main-text ul li {
     font-size: 1rem;
     margin: 5px 0;
     color: #000;
 }
+
 .vist-website a {
     display: inline-block;
-    background-color: #0a21c0;
+    background-color: var(--Primary-Color);
     padding: 11px 30px;
     text-align: center;
     color: #fff;
     font-size: 0.875rem;
     margin-top: 10px;
+    transition: all 0.3s linear;
+
 }
-.moretextt{
+.vist-website a:hover{
+    background-color: var(--Secondary-Color);
+}
+
+.moretextt {
     display: none;
 }
+
 a.contless-button {
     color: #000;
     font-weight: 600;
@@ -534,23 +608,27 @@ a.contless-button {
     display: inline-block;
     font-size: 1.875rem;
     line-height: 1.1;
-  }
-  .Stars::before {
+}
+
+.Stars::before {
     content: "★★★★★";
     letter-spacing: 0px;
     background: linear-gradient(90deg, #ffcd1e var(--percent), #eae9ef var(--percent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  .brand-rating {
+}
+
+.brand-rating {
     display: flex;
     align-items: center;
     margin: 10px 0;
 }
+
 .rate-count p {
     margin-bottom: 0;
 }
-.site-heading p{
+
+.site-heading p {
     /* color: var(--white); */
 }
 
@@ -560,6 +638,7 @@ a.contless-button {
     font-size: 1rem;
     margin-bottom: 5px;
 }
+
 .form-group input {
     width: 100%;
     height: 45px;
@@ -569,16 +648,19 @@ a.contless-button {
     font-size: 0.875rem;
     /* background: #cfcfcff0; */
 }
+
 .form-group {
     margin: 10px 0;
 }
-.form-group textarea{
+
+.form-group textarea {
     height: 300px;
     width: 100%;
     padding: 10px;
     border-radius: 5px;
 
 }
+
 .contact-wrap {
     position: relative;
     max-width: 900px;
@@ -586,27 +668,33 @@ a.contless-button {
     padding: 50px;
     background: var(--Secondary-Color);
 }
-.site-heading h4{
+
+.site-heading h4 {
     font-size: 1.75rem;
     color: #fff;
     font-weight: 600;
 }
-.privacy-wrap{
+
+.privacy-wrap {
     margin: 20px 0;
 }
-.privacy-wrap p{
+
+.privacy-wrap p {
     font-size: 1rem;
     margin-bottom: 10px;
 }
-.privacy-wrap ul{
+
+.privacy-wrap ul {
     padding-left: 20px;
     margin: 10px 0;
     list-style: disc;
 }
-.privacy-wrap ul li{
+
+.privacy-wrap ul li {
     font-size: 1rem;
     padding: 3px 0;
 }
+
 /* sub pages css end */
 
 
@@ -617,34 +705,41 @@ a.contless-button {
 
 
 /* footer section css start */
-.site-footer{
+.site-footer {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.footer-wrap{
+
+.footer-wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 0;
 }
-.footer-links ul{
+
+.footer-links ul {
     display: flex;
     align-items: center;
 }
-.footer-links ul li{
-    padding:  0 10px;
+
+.footer-links ul li {
+    padding: 0 10px;
 }
+
 .footer-links ul li a {
     font-size: 1rem;
     color: #000;
     text-transform: capitalize;
     font-weight: 500;
 }
-.footer-links ul li a:hover{
+
+.footer-links ul li a:hover {
     color: var(--Primary-Color);
 }
-.footer-wrap p{
+
+.footer-wrap p {
     font-size: 1rem;
     color: var(--black);
     margin-bottom: 0;
 }
+
 /* footer section css end */
